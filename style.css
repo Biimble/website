@@ -1,0 +1,66 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #1e3050;
+	color: #f9db4a;
+}
+
+h1 {
+	margin: 25px 0;
+	font-family: 'Montserrat', Calibri, Arial, sans-serif;
+}
+
+#bee {
+	z-index: 100;
+	transition: transform 5s linear;
+}
+
+#bee:active {
+	transform: scale(165);
+	transition: transform 20s cubic-bezier(.79, 0, 1, .34);
+}
+
+#social-icons {
+	display: flex;
+	gap: 20px;
+	margin: 20px 0;
+}
+
+#social-icons a {
+	color: #FFF;
+	text-decoration: none;
+	opacity: .5;
+	transition: opacity .3s;
+}
+
+#social-icons a:hover {
+	opacity: 1;
+}
+
+#social-icons a i {
+	font-size: 30px;
+}
+
+#footer {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#footer #copyright {
+	font-size: 8pt;
+}
